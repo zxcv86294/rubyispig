@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bootstrap 實作提示</title>
+  <style>
+    code pre {
+      background: #eee;
+      border: #ddd 1px solid;
+      padding: 15px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-family: Courier, monospace;
+    }
+    .container {
+      width: 960px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bootstrap 實作提示</h1>
+    <hr />
+    <h3>繁體中文網頁 lang 設定</h3>
+    <code>
+<pre>
+lang="zh-Hant-TW"
+</pre>
+    </code>
+
+    <hr />
+    <h3>Navbar 左側選單基礎 HTML</h3>
+    <code>
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;買屋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;賣屋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;社區&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;成交行情&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;房訊知識&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;租屋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;居家生活&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;門市據點&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;人才招募&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;企業社會責任&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    </code>
+    <hr />
+    <h3>Navbar 右側文字及選單</h3>
+    <code>
+<pre>
+會員專區
+登入/註冊
+網路客服
+</pre>
+    </code>
+    <hr />
+    <h3>頁首區塊文字</h3>
+    <code>
+<pre>
+為了家
+還可以更好
+中古案
+新建案
+海外置產
+進階篩選
+搜尋
+請輸入路街、社區、關鍵字或物件編號
+</pre>
+    </code>
+    <hr />
+    <h3>頁首區塊下拉選單內容</h3>
+    <code>
+<pre>
+縣市
+行政區
+總價
+</pre>
+    </code>
+    <hr />
+    <h3>精選優質好宅內容</h3>
+    <code>
+<pre>
+低總價宅
+精選各區域低總價物件，近捷運、學校、公園等，讓你找到滿意的低價好宅，把握好房趁現在!...
+標題區塊背景色碼：#40C2A0
+------
+信義APP
+信義房屋APP「即時聊、即時推、即時查」讓你找屋省心力，購售需求一次滿足，關於家，找信義聊聊 
+標題區塊背景色碼：#60AEDD
+------
+商辦精選
+如何區分辦公大樓等級?常見可分為A、B、C級大樓，幾個重要指標讓你快速了解！ 
+標題區塊背景色碼：#FF9275
+</pre>
+    </code>
+    <hr />
+    <h3>廣告輪播內容</h3>
+    <code>
+<pre>
+&lt;div class=&quot;&quot; style=&quot;top: 15%; left: 20%;&quot;&gt;
+  &lt;h1&gt;ForPark&lt;/h1&gt;
+  &lt;h3 class=&quot;&quot;&gt;一座公園, 創造幸福進行式&lt;/h3&gt;
+  &lt;div class=&quot;&quot;&gt;秒到四號公園│得和路淳2房│樹海‧書香‧親子時光│&lt;/div&gt;
+  &lt;div class=&quot;&quot;&gt;16‧24坪│02-2928-1688&lt;/div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;了解詳情&lt;/a&gt;
+&lt;/div&gt;
+
+------
+
+&lt;div class=&quot;&quot; style=&quot;top: 15%; right: 20%;&quot;&gt;
+  &lt;h1&gt;誠果 禾樂&lt;/h1&gt;
+  &lt;h3 class=&quot;&quot;&gt;豪宅規格 只需好宅價格&lt;/h3&gt;
+  &lt;div class=&quot;&quot;&gt;板橋門牌，正對2座公園，用高品質打造物超所值的家！&lt;/div&gt;
+  &lt;div class=&quot;&quot;&gt;幸福建築1-3房 2955-5555&lt;/div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;了解詳情&lt;/a&gt;
+&lt;/div&gt;
+
+------
+
+&lt;div class=&quot;&quot; style=&quot;top: 15%; right: 20%;&quot;&gt;
+  &lt;h1&gt;永鼎富世居&lt;/h1&gt;
+  &lt;h3 class=&quot;&quot;&gt;1988萬起換4房&lt;/h3&gt;
+  &lt;div class=&quot;&quot;&gt;頂埔捷運站50米∣出站即到家&lt;/div&gt;
+  &lt;div class=&quot;&quot;&gt;27.6%超低公設∣2267-1808&lt;/div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;了解詳情&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+    </code>
+    <hr />
+    <h3>熱門頻道內容</h3>
+    <code>
+<pre>
+成交行情
+一站涵蓋信義成交、實價登錄行情，提供即時且完整的房屋成交資訊與行情趨勢！
+標題區塊背景色碼：#029BA1
+------
+房訊知識
+最新房市新聞、不動產評論、專題報導、區域動態，豐富的買屋賣屋租屋與居家知識！
+標題區塊背景色碼：#F36A6F
+------
+居家生活
+室內設計、裝潢、居家布置等生活資訊。家具、清潔、修繕訊息給您居家生活實用訊息。 
+標題區塊背景色碼：#C6A273
+</pre>
+    </code>
+    <hr />
+    <h3>信義消息內容</h3>
+    <code>
+<pre>
+&lt;ul class=&quot;&quot;&gt;
+  &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;【台灣服務業唯一】榮獲「企業永續最高榮譽」&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;【信義房價指數】全台都會區季指數&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;&quot;&gt;【信義房價指數】大台北月指數&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    </code>
+    <hr />
+    <h3>頁尾內容</h3>
+    <code>
+<pre>
+&lt;h3 class=&quot;&quot;&gt;信義房屋買屋&lt;/h3&gt;
+&lt;ul class=&quot;&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;條件搜尋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;捷運搜尋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;房屋特輯&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;門市據點&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+------
+
+&lt;h3 class=&quot;&quot;&gt;信義成交行情&lt;/h3&gt;
+&lt;ul class=&quot;&quot;&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;成交行情搜尋&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;軌道經濟學&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;社區房價通&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;成交行情服務說明&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+------
+
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義代銷&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義開發&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義全球資產&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義鑑定&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;安信建經&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;日本信義&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;大馬信義&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;中國信義&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義置業&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;人才招募&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;了解信義&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;企業社會責任&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義公益基金會&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;信義學堂&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;投資人資訊&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;(Investor Relations)&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;利害關係人專區&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;金融機構專區&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;網站地圖&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;服務條款&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;保障隱私權聲明&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;mr-3 d-inline-block&quot;&gt;相關網站&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+    </code>
+  </div>
+</body>
+</html>
